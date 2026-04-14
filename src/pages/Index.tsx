@@ -1,16 +1,40 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import StatsBar from '@/components/StatsBar';
+import ServicesSection from '@/components/ServicesSection';
+import BeforeAfterSection from '@/components/BeforeAfterSection';
+import HowItWorks from '@/components/HowItWorks';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import WhyChooseUs from '@/components/WhyChooseUs';
+import ServiceAreas from '@/components/ServiceAreas';
+import ContactSection from '@/components/ContactSection';
+import FAQSection from '@/components/FAQSection';
+import CTABanner from '@/components/CTABanner';
+import Footer from '@/components/Footer';
+import FloatingElements from '@/components/FloatingElements';
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useScrollAnimation();
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="overflow-x-hidden">
+      <Navbar />
+      <HeroSection />
+      <StatsBar />
+      <ServicesSection />
+      <BeforeAfterSection />
+      <HowItWorks />
+      <TestimonialsSection />
+      <WhyChooseUs />
+      <ServiceAreas />
+      <ContactSection />
+      <FAQSection />
+      <CTABanner />
+      <Footer />
+      <FloatingElements />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
