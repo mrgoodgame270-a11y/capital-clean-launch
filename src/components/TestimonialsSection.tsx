@@ -31,7 +31,7 @@ const TestimonialsSection = () => (
         <div className="mt-4">
           <span className="text-amber text-2xl">⭐⭐⭐⭐⭐</span>
           <span className="font-heading font-bold text-navy ml-2">5.0 Average Rating</span>
-          <p className="text-subtle text-sm mt-1">(Based on customer feedback)</p>
+          <p className="text-subtle text-sm mt-1">(Based on 50+ customer reviews)</p>
         </div>
       </div>
 
@@ -44,15 +44,15 @@ const TestimonialsSection = () => (
             <div className="text-amber text-xl mb-2">⭐⭐⭐⭐⭐</div>
             <div className="text-sky/30 text-5xl leading-none -mb-3">❝</div>
             <p className="text-foreground/80 text-base leading-[1.7] italic">{r.text}</p>
-            <div className="flex items-center gap-3 mt-6">
-              <div className="w-12 h-12 rounded-full gradient-cta flex items-center justify-center text-primary-foreground font-heading font-bold text-lg">
+            <div className="flex items-center gap-3 mt-6 flex-wrap">
+              <div className="w-12 h-12 rounded-full gradient-cta flex items-center justify-center text-primary-foreground font-heading font-bold text-lg shrink-0">
                 {r.initial}
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="font-heading font-semibold text-[15px] text-navy">{r.name}</p>
                 <p className="text-subtle text-[13px]">{r.location}</p>
               </div>
-              <span className="ml-auto bg-sky/10 text-primary text-[11px] font-semibold px-2.5 py-1 rounded-full">
+              <span className="bg-sky/10 text-primary text-[11px] font-semibold px-2.5 py-1 rounded-full whitespace-nowrap sm:ml-auto">
                 {r.service}
               </span>
             </div>

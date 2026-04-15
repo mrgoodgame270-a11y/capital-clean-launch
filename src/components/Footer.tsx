@@ -13,21 +13,34 @@ const Footer = () => {
           {/* Brand */}
           <div className="text-center md:text-left">
             <img src="/logo.png" alt="Capital Clean Logo" className="h-20 mx-auto md:mx-0 mb-4" />
-            <p className="text-sky-accent italic font-display text-lg">"Driveway Lickin Good"</p>
+            <p className="text-sky-accent italic font-display text-lg">"Spotless. Every Time."</p>
             <p className="text-primary-foreground/65 text-sm leading-relaxed mt-3">
               Wellington & Hutt Valley's trusted pressure washing specialists. Driveways, houses, gutters & sidewalks.
             </p>
-            <a
-              href="https://instagram.com/capital_clean_pressure_washing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-primary-foreground/20 hover:border-sky hover:text-sky text-primary-foreground/60 transition-colors mt-4"
-              aria-label="Instagram"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-              </svg>
-            </a>
+            <div className="flex gap-3 mt-4 justify-center md:justify-start">
+              <a
+                href="https://instagram.com/capital_clean_pressure_washing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-primary-foreground/20 hover:border-sky hover:text-sky text-primary-foreground/60 transition-colors"
+                aria-label="Instagram"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
+              <a
+                href="https://facebook.com/capitalcleanpw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-primary-foreground/20 hover:border-sky hover:text-sky text-primary-foreground/60 transition-colors"
+                aria-label="Facebook"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                </svg>
+              </a>
+            </div>
           </div>
 
           {/* Services */}
@@ -61,7 +74,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/[0.08] mt-10 pt-6 flex flex-wrap justify-between gap-4">
-          <p className="text-primary-foreground/40 text-[13px]">© 2025 Capital Clean Pressure Washing. All rights reserved.</p>
+          <p className="text-primary-foreground/40 text-[13px]">© 2026 Capital Clean Pressure Washing. All rights reserved.</p>
           <p className="text-primary-foreground/40 text-[13px]">Wellington & Hutt Valley, New Zealand</p>
         </div>
       </div>

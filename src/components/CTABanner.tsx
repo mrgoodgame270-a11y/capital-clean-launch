@@ -9,7 +9,6 @@ const CTABanner = () => {
       <div className="absolute -left-[150px] -top-[150px] w-[500px] h-[500px] rounded-full bg-primary-foreground/[0.08]" />
 
       <div className="container mx-auto text-center relative z-10">
-        <div className="text-6xl mb-4">✨</div>
         <h2 className="scroll-animate font-heading font-black text-[32px] md:text-5xl text-primary-foreground" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.2)' }}>
           Ready to Transform Your Property?
         </h2>

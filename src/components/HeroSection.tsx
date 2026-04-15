@@ -41,12 +41,24 @@ const HeroSection = () => {
         }}
       />
 
+      {/* Mobile background image */}
+      <div className="lg:hidden absolute inset-0 z-0">
+        <img
+          src={heroImage}
+          alt="Pressure washing service Wellington"
+          className="w-full h-full object-cover opacity-20"
+          width={800}
+          height={600}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/40 to-dark/80" />
+      </div>
+
       <div className="container mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left max-w-[600px] mx-auto lg:mx-0">
             <div className="scroll-animate visible inline-block mb-6">
-              <span className="inline-block bg-sky/15 border border-sky/40 rounded-full px-4 py-1.5 text-sky-accent text-[13px] font-semibold">
+              <span className="inline-block bg-sky/15 border border-sky/40 rounded-full px-3 py-1.5 text-sky-accent text-[12px] sm:text-[13px] font-semibold whitespace-nowrap">
                 ⭐ Wellington & Hutt Valley's #1 Choice
               </span>
             </div>
@@ -58,8 +70,8 @@ const HeroSection = () => {
               <span className="text-primary-foreground block">EXPERTS</span>
             </h1>
 
-            <p className="scroll-animate visible font-display text-sky-accent text-[22px] md:text-[28px] tracking-[4px] mt-4">
-              "DRIVEWAY LICKIN GOOD"
+            <p className="scroll-animate visible font-display text-sky-accent text-[20px] md:text-[26px] tracking-[3px] md:tracking-[4px] mt-4">
+              SPOTLESS. EVERY TIME.
             </p>
 
             <p className="scroll-animate visible text-primary-foreground/75 text-base md:text-lg leading-relaxed mt-5 max-w-[480px] mx-auto lg:mx-0">
