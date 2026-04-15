@@ -42,17 +42,17 @@ const Navbar = () => {
         style={{ height: '72px' }}
       >
         <div className="container mx-auto h-full flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 shrink-0">
             <img
               src="/logo.png"
               alt="Capital Clean Pressure Washing Logo"
-              className="h-14 md:h-14 w-auto"
+              className="h-10 sm:h-14 w-auto"
             />
             <div className="hidden sm:block">
-              <span className="text-primary-foreground font-heading font-extrabold text-lg block leading-tight">
+              <span className="text-primary-foreground font-heading font-extrabold text-base sm:text-lg block leading-tight">
                 Capital Clean
               </span>
-              <span className="text-sky-accent text-[11px] tracking-[2px] font-medium block">
+              <span className="text-sky-accent text-[10px] sm:text-[11px] tracking-[2px] font-medium block">
                 PRESSURE WASHING
               </span>
             </div>

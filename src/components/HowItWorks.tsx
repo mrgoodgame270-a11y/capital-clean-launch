@@ -1,19 +1,16 @@
 const steps = [
   {
     num: 1,
-    icon: '📞',
     title: 'Get Your Free Quote',
     desc: "Contact us via WhatsApp, call, or our form. Tell us what needs cleaning — we'll give you a fast, free, no-obligation quote.",
   },
   {
     num: 2,
-    icon: '📅',
     title: 'Schedule Your Clean',
     desc: "Pick a time that works for you. We'll arrive on time, fully equipped and ready to transform your property.",
   },
   {
     num: 3,
-    icon: '✨',
     title: 'Enjoy the Results',
     desc: 'We leave your property spotless. Simple as that. 100% satisfaction guaranteed or we come back.',
   },
@@ -34,10 +31,9 @@ const HowItWorks = () => (
 
         {steps.map((step) => (
           <div key={step.num} className="scroll-animate text-center relative">
-            <div className="w-20 h-20 rounded-full gradient-cta text-primary-foreground font-heading font-black text-[32px] flex items-center justify-center mx-auto mb-2 shadow-[0_8px_32px_rgba(26,111,212,0.3)] relative z-10">
+            <div className="w-20 h-20 rounded-full gradient-cta text-primary-foreground font-heading font-black text-[32px] flex items-center justify-center mx-auto mb-6 shadow-[0_8px_32px_rgba(26,111,212,0.3)] relative z-10">
               {step.num}
             </div>
-            <div className="text-[32px] mb-4">{step.icon}</div>
             <h3 className="font-heading font-bold text-xl text-navy mb-3">{step.title}</h3>
             <p className="text-subtle text-[15px] leading-relaxed max-w-[240px] mx-auto">{step.desc}</p>
           </div>

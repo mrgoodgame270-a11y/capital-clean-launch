@@ -79,7 +79,7 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="space-y-6 order-1 lg:order-2">
             {[
-              { icon: '💬', label: 'WHATSAPP / CALL', value: '+64 XX XXX XXXX', sub: 'Fastest response — reply within 1 hour', href: 'https://wa.me/64XXXXXXXXX' },
+              { icon: '💬', label: 'WHATSAPP / CALL', value: '+64 XX XXX XXXX', sub: 'Fastest response — reply within 2 hours', href: 'https://wa.me/64XXXXXXXXX' },
               { icon: '📧', label: 'EMAIL', value: 'hello@capitalclean.co.nz', sub: 'We reply within 2-3 hours' },
               { icon: '📍', label: 'SERVICE AREA', value: 'Wellington & Hutt Valley', sub: 'All suburbs — ask if unsure' },
             ].map((c, i) => (

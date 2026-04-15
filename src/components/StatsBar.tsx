@@ -3,8 +3,8 @@ import { useEffect, useState, useRef } from 'react';
 const stats = [
   { value: 50, suffix: '+', label: 'Happy Customers' },
   { value: 100, suffix: '%', label: 'Satisfaction Rate' },
-  { value: 5, suffix: '★', label: 'Average Rating' },
-  { value: 2, suffix: '', label: 'Areas Covered', sub: 'Wellington & Hutt Valley' },
+  { value: 5, suffix: '★', label: 'Google Rating' },
+  { value: 200, suffix: '+', label: 'Jobs Completed' },
 ];
 
 const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
@@ -53,7 +53,6 @@ const StatsBar = () => (
           <div key={i} className="text-center relative">
             <Counter target={stat.value} suffix={stat.suffix} />
             <p className="text-subtle text-[15px] font-medium uppercase tracking-wider mt-1">{stat.label}</p>
-            {stat.sub && <p className="text-primary text-sm mt-1">{stat.sub}</p>}
             {i < stats.length - 1 && (
               <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-16 bg-border" />
             )}
