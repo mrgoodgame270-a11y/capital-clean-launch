@@ -190,3 +190,34 @@
     padding-bottom: 80px;
   }
 }
+
+/* TEMP: hide old ElevenAgents leftovers */
+.powered-by-elevenagents,
+#powered-by-elevenagents,
+[data-powered-by="elevenagents"],
+.elevenagents,
+#elevenagents,
+[class*="elevenagents"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+#el-convai {
+  position: fixed !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  z-index: 9999 !important;
+  max-width: 340px;
+  width: auto;
+}
+
+@media (max-width: 767px) {
+  #el-convai {
+    right: 16px !important;
+    bottom: calc(88px + env(safe-area-inset-bottom)) !important;
+    transform: scale(0.92);
+    transform-origin: bottom right;
+    max-width: calc(100vw - 32px);
+  }
+}
+

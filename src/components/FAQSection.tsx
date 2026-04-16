@@ -16,7 +16,7 @@ const FAQSection = () => {
     <section className="bg-icy py-14 md:py-20">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-5 gap-8 md:gap-12">
-          <div className="lg:col-span-2 scroll-animate">
+          <div className="lg:col-span-2 scroll-animate visible">
             <p className="text-sky-accent text-[12px] font-bold tracking-[4px] mb-3">FAQ</p>
             <h2 className="font-heading font-extrabold text-[26px] sm:text-[28px] md:text-[36px] text-navy leading-tight">Common Questions</h2>
             <p className="text-subtle text-xs sm:text-sm mt-3">Can't find your answer?</p>
@@ -33,7 +33,7 @@ const FAQSection = () => {
 
           <div className="lg:col-span-3 space-y-2">
             {faqs.map((faq, i) => (
-              <div key={i} className={`scroll-animate bg-card rounded-xl border overflow-hidden transition-all ${openIndex === i ? 'border-l-[3px] border-l-sky border-sky/30' : 'border-border'}`}>
+              <div key={i} className={`scroll-animate visible bg-card rounded-xl border overflow-hidden transition-all ${openIndex === i ? 'border-l-[3px] border-l-sky border-sky/30' : 'border-border'}`}>
                 <button onClick={() => setOpenIndex(openIndex === i ? null : i)} className="w-full px-4 sm:px-5 py-3.5 sm:py-4 flex items-center justify-between text-left hover:bg-muted/50 transition-colors min-h-[44px]">
                   <span className={`font-heading font-semibold text-[13px] sm:text-[14px] pr-4 ${openIndex === i ? 'text-primary' : 'text-navy'}`}>{faq.q}</span>
                   <span className="text-primary text-lg shrink-0">{openIndex === i ? '−' : '+'}</span>
