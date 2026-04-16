@@ -40,21 +40,21 @@ const features = [
 const WhyChooseUs = () => (
   <section className="gradient-dark py-14 md:py-20">
     <div className="container mx-auto">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
         <div>
           <p className="text-sky-accent text-[12px] font-bold tracking-[4px] mb-3 scroll-animate">WHY CAPITAL CLEAN</p>
-          <h2 className="scroll-animate font-heading font-extrabold text-[28px] md:text-[38px] text-primary-foreground leading-tight">
-            Wellington's Most Trusted Clean
+          <h2 className="scroll-animate font-heading font-extrabold text-[26px] sm:text-[28px] md:text-[38px] text-primary-foreground leading-tight">
+            Wellington's Trusted Clean
           </h2>
-          <div className="mt-8 space-y-5">
+          <div className="mt-6 md:mt-8 space-y-4 md:space-y-5">
             {features.map((f, i) => (
-              <div key={i} className="scroll-animate flex gap-4 items-start">
-                <div className="w-11 h-11 shrink-0 rounded-xl bg-sky/15 border border-sky/30 flex items-center justify-center text-sky-accent">
+              <div key={i} className="scroll-animate flex gap-3 sm:gap-4 items-start">
+                <div className="w-10 h-10 sm:w-11 sm:h-11 shrink-0 rounded-xl bg-sky/15 border border-sky/30 flex items-center justify-center text-sky-accent">
                   {f.icon}
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold text-base text-primary-foreground">{f.title}</h3>
-                  <p className="text-primary-foreground/55 text-sm">{f.desc}</p>
+                  <h3 className="font-heading font-semibold text-sm sm:text-base text-primary-foreground">{f.title}</h3>
+                  <p className="text-primary-foreground/55 text-xs sm:text-sm">{f.desc}</p>
                 </div>
               </div>
             ))}
@@ -62,14 +62,14 @@ const WhyChooseUs = () => (
         </div>
 
         <div className="flex items-center justify-center scroll-animate">
-          <div className="w-[220px] md:w-[300px] h-[220px] md:h-[300px] rounded-full bg-primary-foreground/5 border-2 border-sky/25 shadow-[0_0_60px_rgba(56,189,248,0.12)] flex flex-col items-center justify-center relative">
-            <div className="absolute inset-5 rounded-full border-2 border-dashed border-primary-foreground/10" />
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="hsl(199,92%,60%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="mb-2">
+          <div className="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[300px] md:h-[300px] rounded-full bg-primary-foreground/5 border-2 border-sky/25 shadow-[0_0_60px_rgba(56,189,248,0.12)] flex flex-col items-center justify-center relative">
+            <div className="absolute inset-4 sm:inset-5 rounded-full border-2 border-dashed border-primary-foreground/10" />
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="hsl(199,92%,60%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="mb-1 sm:mb-2 md:w-10 md:h-10">
               <path d="M6 9H4.5a2.5 2.5 0 010-5H6"/><path d="M18 9h1.5a2.5 2.5 0 000-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 1012 0V2z"/>
             </svg>
-            <p className="font-heading font-black text-[64px] md:text-[72px] text-gradient leading-none">100%</p>
-            <p className="text-primary-foreground text-lg">Satisfaction</p>
-            <p className="text-primary-foreground/70 text-sm">Guaranteed</p>
+            <p className="font-heading font-black text-[48px] sm:text-[56px] md:text-[72px] text-gradient leading-none">100%</p>
+            <p className="text-primary-foreground text-sm sm:text-base md:text-lg">Satisfaction</p>
+            <p className="text-primary-foreground/70 text-xs sm:text-sm">Guaranteed</p>
           </div>
         </div>
       </div>

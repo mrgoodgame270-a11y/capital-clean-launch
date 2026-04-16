@@ -45,24 +45,24 @@ const ServicesSection = () => {
   return (
     <section id="services" className="bg-icy py-14 md:py-20">
       <div className="container mx-auto">
-        <div className="text-center mb-14 scroll-animate">
+        <div className="text-center mb-10 md:mb-14 scroll-animate">
           <p className="text-sky-accent text-[12px] font-bold tracking-[4px] mb-3">WHAT WE DO</p>
-          <h2 className="font-heading font-extrabold text-[30px] md:text-[42px] text-navy">Our Services</h2>
+          <h2 className="font-heading font-extrabold text-[28px] sm:text-[30px] md:text-[42px] text-navy">Our Services</h2>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           {services.map((service, i) => (
             <div
               key={i}
               onClick={scrollToContact}
-              className="scroll-animate bg-card rounded-2xl p-6 md:p-7 shadow-[0_2px_16px_rgba(13,31,92,0.06)] border border-transparent hover:-translate-y-2 hover:shadow-[0_16px_48px_rgba(56,189,248,0.15)] hover:border-sky/40 transition-all duration-300 cursor-pointer group"
+              className="scroll-animate bg-card rounded-2xl p-4 sm:p-6 md:p-7 shadow-[0_2px_16px_rgba(13,31,92,0.06)] border border-transparent hover:-translate-y-2 hover:shadow-[0_16px_48px_rgba(56,189,248,0.15)] hover:border-sky/40 transition-all duration-300 cursor-pointer group"
             >
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/10 to-sky/15 flex items-center justify-center mb-5 text-primary group-hover:from-primary/20 group-hover:to-sky/25 transition-all">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-primary/10 to-sky/15 flex items-center justify-center mb-3 md:mb-5 text-primary group-hover:from-primary/20 group-hover:to-sky/25 transition-all">
                 {service.iconSvg}
               </div>
-              <h3 className="font-heading font-bold text-lg md:text-xl text-navy">{service.name}</h3>
-              <p className="text-subtle text-sm leading-relaxed mt-2">{service.description}</p>
-              <span className="text-primary font-semibold text-sm mt-4 block group-hover:text-sky transition-colors">
+              <h3 className="font-heading font-bold text-sm sm:text-base md:text-xl text-navy leading-tight">{service.name}</h3>
+              <p className="text-subtle text-xs sm:text-sm leading-relaxed mt-1.5 hidden sm:block">{service.description}</p>
+              <span className="text-primary font-semibold text-xs sm:text-sm mt-2 sm:mt-4 block group-hover:text-sky transition-colors">
                 Get Quote →
               </span>
             </div>

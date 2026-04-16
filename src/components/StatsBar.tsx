@@ -34,20 +34,20 @@ const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
   }, [target]);
 
   return (
-    <div ref={ref} className="font-heading font-black text-[44px] md:text-[56px] text-navy leading-none">
+    <div ref={ref} className="font-heading font-black text-[36px] sm:text-[44px] md:text-[56px] text-navy leading-none">
       {count}{suffix}
     </div>
   );
 };
 
 const StatsBar = () => (
-  <section className="bg-card border-t-4 border-sky shadow-[0_4px_24px_rgba(0,0,0,0.06)] py-10 md:py-14">
+  <section className="bg-card border-t-4 border-sky shadow-[0_4px_24px_rgba(0,0,0,0.06)] py-8 md:py-14">
     <div className="container mx-auto">
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
         {stats.map((stat, i) => (
           <div key={i} className="text-center relative">
             <Counter target={stat.value} suffix={stat.suffix} />
-            <p className="text-subtle text-sm font-medium uppercase tracking-wider mt-2">{stat.label}</p>
+            <p className="text-subtle text-xs sm:text-sm font-medium uppercase tracking-wider mt-1.5">{stat.label}</p>
             {i < stats.length - 1 && (
               <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-16 bg-border" />
             )}
